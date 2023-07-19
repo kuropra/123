@@ -1,0 +1,281 @@
+{
+    "licances": {
+        "Vaithlengkap": true,
+        "Sampecintadedegemes": true,
+        "RZALICENSE": true,
+        "lawrencemonly": true,
+        "easmonly": true
+    },
+    "user": {
+        "Admin": {
+            "username": "Admin",
+            "password": "Pantek123!",
+            "rank": "Access",
+            "expires": 1720006384414
+        },
+        "pantek": {
+            "username": "pantek",
+            "password": "pantek",
+            "mac": "S-1-5-21-1728765710-1624003924-446370425-1001",
+            "licance": "OAPBCCD279",
+            "rank": "User",
+            "expires": 1691829671936
+        },
+        "okehken": {
+            "username": "okehken",
+            "password": "lolu00",
+            "mac": "S-1-5-21-1991685195-2970866014-2314857872-1001",
+            "licance": "AI85K9PJHP",
+            "rank": "User",
+            "expires": 1691830589837
+        },
+        "blacklance13": {
+            "username": "blacklance13",
+            "password": "y45y4y45y4",
+            "mac": "S-1-5-21-3625745391-3397498460-2735954544-1000",
+            "licance": "dirtykib",
+            "rank": "User",
+            "expires": 1691833952357
+        },
+        "denn": {
+            "username": "denn",
+            "password": "denn",
+            "mac": "S-1-5-21-3698796382-2223500035-2316987891-1001",
+            "licance": "DENLENGKAPGES",
+            "rank": "User",
+            "expires": 1691836096065
+        },
+        "blokc9": {
+            "username": "blokc9",
+            "password": "kontol123",
+            "mac": "S-1-5-21-4013083249-1585929322-1457199330-1001",
+            "licance": "RoyNewaccount",
+            "rank": "User",
+            "expires": 1691847482934
+        },
+        "Brownsugar": {
+            "username": "Brownsugar",
+            "password": "k4k4kad1k",
+            "mac": "S-1-5-21-982066568-701831606-1252025046-1001",
+            "licance": "BrownSugarStore01@",
+            "rank": "User",
+            "expires": 1691904157566
+        },
+        "alisaa": {
+            "username": "alisaa",
+            "password": "alisaa",
+            "mac": "S-1-5-21-3496761958-3970649707-689906407-500",
+            "licance": "cesmonthly",
+            "rank": "User",
+            "expires": 1691912554447
+        },
+        "este": {
+            "username": "este",
+            "password": "080808",
+            "mac": "S-1-5-21-2561131342-3986587884-1253474224-1001",
+            "licance": "Estefania1month",
+            "rank": "User",
+            "expires": 1691931060765
+        },
+        "dyas95": {
+            "username": "dyas95",
+            "password": "Dyasardian1995$1",
+            "mac": "S-1-5-21-989989488-4258174900-1255855728-1001",
+            "licance": "Ardianfull",
+            "rank": "User",
+            "expires": 1691934922910
+        },
+        "kidot": {
+            "username": "kidot",
+            "password": "kidot",
+            "mac": "S-1-5-21-918092748-523200375-1445125703-1001",
+            "licance": "KIDOTMONTLY",
+            "rank": "User",
+            "expires": 1691941096368
+        },
+        "wiwin": {
+            "username": "wiwin",
+            "password": "22maret1990",
+            "mac": "S-1-5-21-2367548362-257980200-2972087106-1000",
+            "licance": "radcliflifetime",
+            "rank": "User",
+            "expires": 1691943653573
+        },
+        "fucek": {
+            "username": "fucek",
+            "password": "fucek",
+            "mac": "S-1-5-21-849151303-3719938495-1003006515-1001",
+            "licance": "fucekmonthly",
+            "rank": "User",
+            "expires": 1691981704536
+        },
+        "ravi": {
+            "username": "ravi",
+            "password": "ravi1214",
+            "mac": "S-1-5-21-3204488351-1884327624-1593266402-1001",
+            "licance": "raavimonthly",
+            "rank": "User",
+            "expires": 1692001314246
+        },
+        "billy": {
+            "username": "billy",
+            "password": "billy",
+            "mac": "S-1-5-21-15721172-1837185829-1885411144-1001",
+            "licance": "saguermonlt",
+            "rank": "User",
+            "expires": 1692001711832
+        },
+        "kmaelfree": {
+            "username": "kmaelfree",
+            "password": "kmaelfree",
+            "mac": "S-1-5-21-3255922113-1544085270-2792963164-1001",
+            "licance": "kmaelfree",
+            "rank": "User",
+            "expires": 1692006606439
+        },
+        "rei": {
+            "username": "rei",
+            "password": "rei",
+            "mac": "S-1-5-21-2430119781-2629245858-3241544156-1001",
+            "licance": "tensenmonly",
+            "rank": "User",
+            "expires": 1692016017347
+        },
+        "RafxNeverDie": {
+            "username": "RafxNeverDie",
+            "password": "Raffi221006",
+            "mac": "S-1-5-21-1004483501-71387673-1316488488-1001",
+            "licance": "Rafxlengkap",
+            "rank": "User",
+            "expires": 1692016953983
+        },
+        "lancartech": {
+            "username": "lancartech",
+            "password": "10polonG",
+            "mac": "S-1-5-21-2038946348-3326965934-3547150077-1001",
+            "licance": "imzoromonnly",
+            "rank": "User",
+            "expires": 1692018519377
+        },
+        "vito": {
+            "username": "vito",
+            "password": "vito",
+            "mac": "S-1-5-21-3023707340-3516766057-4047603409-1001",
+            "licance": "Vorzedobel",
+            "rank": "User",
+            "expires": 1692020570266
+        },
+        "keroroo": {
+            "username": "keroroo",
+            "password": "123",
+            "mac": "S-1-5-21-2707893022-2509096608-1586344787-1002",
+            "licance": "kerorolifetime",
+            "rank": "User",
+            "expires": 1692024721935
+        },
+        "sscloud": {
+            "username": "sscloud",
+            "password": "sscloud",
+            "mac": "S-1-5-21-3711461409-1097788790-2753298311-1000",
+            "licance": "SScloudLifetime",
+            "rank": "User",
+            "expires": 1692026165930
+        },
+        "job": {
+            "username": "job",
+            "password": "job",
+            "mac": "S-1-5-21-4196021818-3568303338-2118089092-1001",
+            "licance": "yunusesc",
+            "rank": "User",
+            "expires": 1692027401870
+        },
+        "bojil": {
+            "username": "bojil",
+            "password": "boss123",
+            "mac": "S-1-5-21-1009093444-3430768838-232541157-1001",
+            "licance": "9WP5M6C32F",
+            "rank": "User",
+            "expires": 1692089748936
+        },
+        "dimas994": {
+            "username": "dimas994",
+            "password": "dimas994",
+            "mac": "S-1-5-21-1943075724-3777984975-1948623248-1001",
+            "licance": "suyyliftime",
+            "rank": "User",
+            "expires": 1692110126924
+        },
+        "Super Shot": {
+            "username": "Super Shot",
+            "password": "Chrıstofer2006",
+            "mac": "S-1-5-21-734110779-4144951104-1012732398-500",
+            "licance": "Monlysupershot",
+            "rank": "User",
+            "expires": 1692117227499
+        },
+        "den": {
+            "username": "den",
+            "password": "den",
+            "mac": "S-1-5-21-3698796382-2223500035-2316987891-1001",
+            "licance": "DENNSOUC",
+            "rank": "User",
+            "expires": 1692157200435
+        },
+        "aliking": {
+            "username": "aliking",
+            "password": "aliking",
+            "mac": "S-1-5-21-3075348608-1665712955-2481524434-500",
+            "licance": "Andrewdobel",
+            "rank": "User",
+            "expires": 1692174407448
+        },
+        "waffa": {
+            "username": "waffa",
+            "password": "123",
+            "mac": "S-1-5-21-1313388735-1677075376-3520912110-1001",
+            "licance": "kerorrodua",
+            "rank": "User",
+            "expires": 1692188518453
+        },
+        "perzGG": {
+            "username": "perzGG",
+            "password": "perzGG",
+            "mac": "S-1-5-21-122960664-3970138578-3582683289-500",
+            "licance": "lerisouc",
+            "rank": "User",
+            "expires": 1692200103880
+        },
+        "jarinx": {
+            "username": "jarinx",
+            "password": "kentomeo",
+            "mac": "S-1-5-21-1185361059-2822772637-224765799-1001",
+            "licance": "jarinxdoble",
+            "rank": "User",
+            "expires": 1692217455241
+        },
+        "Stasiun": {
+            "username": "Stasiun",
+            "password": "Aprio14",
+            "mac": "S-1-5-21-122960664-3970138578-3582683289-500",
+            "licance": "Dskaccmonly",
+            "rank": "User",
+            "expires": 1692248920335
+        },
+        "albar": {
+            "username": "albar",
+            "password": "albar",
+            "mac": "S-1-5-21-1690859366-183249196-3271073334-500",
+            "licance": "Albarmonly",
+            "rank": "User",
+            "expires": 1692275815008
+        },
+        "raga1": {
+            "username": "raga1",
+            "password": "raga123",
+            "mac": "S-1-5-21-1006944435-2598900535-4056263346-1001",
+            "licance": "perahumonly",
+            "rank": "User",
+            "expires": 1692284247047
+        }
+    }
+}

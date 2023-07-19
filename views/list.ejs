@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Login Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            background-color: rgb(55 65 81) !important;
+        }
+    </style>
+  </head>
+<body class="flex flex-col min-h-screen">
+    <nav class="bg-gray-800 py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-white text-2xl px-6 font-bold">
+                <i class="fa-solid fa-user"></i>
+                <a href="/admin">Back</a>
+            </div>
+        </div>
+    </nav>
+    <%
+      function formatDate(date, format) {
+        const map = {
+            mm: date.getMonth() + 1,
+            dd: date.getDate(),
+            yyyy: date.getFullYear()
+        }
+    
+        return `${map.dd}.${map.mm}.${map.yyyy}`;
+      }
+    %>
+    <div class="container mx-auto px-4 py-8 flex-grow">
+    <br>
+    <div class="email-form" id="email-password-form">
+      <%for(var i = 0; i < users.length; i++){%>
+        <div class="bg-white rounded-lg shadow-md px-5 py-8 bg-gray-800">
+          <h4 class="text-white text-sm font-bold mb-2">Username: <%=users[i].username%></h4>
+          <h4 class="text-white text-sm font-bold mb-2">Rank: <%=users[i].rank%></h4>
+          <h4 class="text-white text-sm font-bold mb-2">Time: <%=formatDate(new Date(users[i].expires))%></h4>                       
+          <form autocomplete="off" style="margin-bottom: 5px;" action="/api/user/password" method="post">
+            <input type="hidden" name="passusername" value="<%=users[i].username%>">
+            <input type="text" class="border border-gray-300 rounded-md px-2 py-2 focus:outline-none focus:border-blue-500" name="newpassword" placeholder="New Password">
+            <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-3 rounded focus:outline-none">
+              <i class="fa-solid fa-eye-slash"></i>
+              Change
+            </button>
+          </form>
+          <form autocomplete="off" action="/api/user/addtime" method="post">
+            <input type="hidden" name="newdayusername" value="<%=users[i].username%>">
+            <input type="text" class="border border-gray-300 rounded-md px-2 py-2 focus:outline-none focus:border-blue-500" name="newday" placeholder="New Time">
+            <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none">
+              <i class="fa-solid fa-rotate-right"></i>
+              Submit
+            </button>
+          </form>
+          <br>
+          <form autocomplete="off" style="margin-bottom: 5px;" action="/api/user/remove" method="post">
+            <input type="hidden" name="removeusername" value="<%=users[i].username%>">
+            <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none">
+              <i class="fa-solid fa-trash"></i>
+              Remove
+            </button>
+          </form>
+        </div>
+        <br>
+        <%}%>
+        </div>
+    </div>
+</body>
+  </html>

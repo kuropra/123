@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>ADMIN</title>
+    <style>
+        body {
+            background-color: rgb(55 65 81) !important;
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+    <nav class="bg-gray-800 py-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-white text-2xl px-6 font-bold">
+                <i class="fa-solid fa-user"></i>
+                <a href="/logout"><%=user.username%></a>
+            </div>
+        </div>
+    </nav>
+    <%
+      function formatDate(date, format) {
+        const map = {
+            mm: date.getMonth() + 1,
+            dd: date.getDate(),
+            yyyy: date.getFullYear()
+        }
+    
+        return `${map.dd}.${map.mm}.${map.yyyy}`;
+      }
+    %>
+    <%if(admin == true){%>
+        <div class="container mx-auto px-4 py-8 flex-grow">
+          <div class="cldiv" id="cldivid">
+	    	    <form autocomplete="off" action="/api/licances/create" method="post" autocomplete="off" class="bg-white rounded-lg shadow-md px-5 py-8 bg-gray-800">
+              <div class="mb-4">
+                <label for="createlicance" class="block text-white text-sm font-bold mb-2">License</label>
+                <input type="text" class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-blue-500" name="createlicance" id="createlicance" placeholder="License">
+              </div>
+              <div class="flex items-center justify-between">
+                <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none">
+                  <i class="fa-solid fa-plus"></i>
+                  Create
+                </button>
+              </div>
+            </form>
+          </div>
+          <br>
+          <div class="gtw" id="entah">
+            <%for(var i = 0; i < licances.length; i++){%>
+            <form autocomplete="off" action="/api/licances/remove" method="post" autocomplete="off" class="bg-white rounded-lg shadow-md px-5 py-5 bg-gray-800">
+              <div class="mb-2">
+                <input type="text" class="border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-blue-500" name="removelicance" id="removelicance" placeholder="License" value="<%=licances[i]%>">
+                <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none">
+                  <i class="fa-solid fa-trash"></i>
+                  Delete
+                </button>
+              </div>
+            </form>
+            <br>
+            <%}%>
+          </div>
+          <br>
+          <div class="hi" id="ajg">
+            <form autocomplete="off" action="/api/user/create" method="post" autocomplete="off" class="bg-white rounded-lg shadow-md px-5 py-8 bg-gray-800">
+              <div class="mb-4">
+                <label for="uusername" class="block text-white text-sm font-bold mb-2">Username</label>
+                <input type="text" class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-blue-500" name="uusername" id="uusername" placeholder="Username">
+                <label for="upassword" class="block text-white text-sm font-bold mb-2">Password</label>
+                <input type="text" class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-blue-500" name="upassword" id="upassword" placeholder="Password">
+                <label for="uday" class="block text-white text-sm font-bold mb-2">Time</label>
+                <input type="text" class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-blue-500" name="uday" id="uday" placeholder="Time">
+                <label for="urank" class="block text-white text-sm font-bold mb-2">Rank</label>
+                <input type="text" class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:border-blue-500" name="urank" id="urank" placeholder="Rank">
+              </div>
+              <div class="flex items-center justify-between">
+                <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none">
+                  <i class="fa-solid fa-plus"></i>
+                  Create
+                </button>
+              </div>
+            </form>
+          </div>
+          <br>
+          <div class="listacc" id="acc">
+            <form autocomplete="off" action="/api/list_redirect" method="post" class="bg-white rounded-lg shadow-md px-5 py-8 bg-gray-800">
+              <div class="flex items-center justify-between">
+                <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none">
+                  <i class="fa-solid fa-user"></i>
+                  Account List
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+  <script>
+		function licanceCreate(length) {
+			var result = '';
+			var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+			var charactersLength = characters.length;
+			for (var i=0; i<length; i++) {
+				result += characters.charAt(Math.floor(Math.random() * charactersLength));
+			}
+			return result;
+		}
+		let lic = licanceCreate(10);
+		document.getElementById("createlicance").value = lic;
+	</script>
+    <%}%>
+
+</body>
+</html>
